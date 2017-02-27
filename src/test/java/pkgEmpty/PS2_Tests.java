@@ -84,8 +84,8 @@ public class PS2_Tests {
 		assertFalse(MyInteger.isPrime(test12));
 		assertFalse(MyInteger.isPrime(test20));
 		
-		boolean num = MyInteger.isPrime(test4);
-		assertEquals(test4.isPrime(),num);
+		boolean number = MyInteger.isPrime(test4);
+		assertEquals(test4.isPrime(),number);
 		
 	}
 

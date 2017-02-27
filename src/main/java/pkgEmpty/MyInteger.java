@@ -22,6 +22,7 @@ package pkgEmpty;
 			return false;
 	}
 	
+	
 	public boolean isOdd() 
 	{
 		if ((iValue % 2) == 1)
@@ -33,57 +34,57 @@ package pkgEmpty;
 	public boolean isPrime()
 	{
 		for(int i = 2;i < iValue;i++) 
-	        if((iValue % i) == 0)
+	        if((iValue % i)==0)
 	            return false;
 	    return true;
 	}
 	
-	public static boolean isEven(int n) 
+	public static boolean isEven(int x) 
 	{
-		if ((n % 2) == 0)
+		if ((x % 2) == 0)
 			return true;
 		else
 			return false;
 	}
 	
-	public static boolean isOdd(int n) 
+	public static boolean isOdd(int x) 
 	{
-		if ((n % 2) == 1)
+		if ((x % 2) == 1)
 			return true;
 		else
 			return false;
 	}
 	
-	public static boolean isPrime(int n)
+	public static boolean isPrime(int x)
 	{
-		for(int i = 2;i < n;i++) 
-	        if((n % i) == 0)
+		for(int i = 2;i < x;i++) 
+	        if((x % i) == 0)
 	            return false;
 	    return true;
 	}
 	
-	public static boolean isEven(MyInteger num) 
+	public static boolean isEven(MyInteger number) 
 	{
-		return num.isEven();
+		return number.isEven();
 	}
 	
-	public static boolean isOdd(MyInteger num) 
+	public static boolean isOdd(MyInteger number) 
 	{
-		return num.isOdd();
+		return number.isOdd();
 	}
 	
-	public static boolean isPrime(MyInteger num)
+	public static boolean isPrime(MyInteger number)
 	{
-		return num.isPrime();
+		return number.isPrime();
 	}
 	
-	public boolean equals(int n)
+	public boolean equals(int x)
 	{
-		return (n == this.iValue);
+		return (x == this.iValue);
 	}
 	
-	public boolean equals(MyInteger num)
+	public boolean equals(MyInteger number)
 	{
-		return (num.getiValue() == this.iValue);
+		return (number.getiValue() == this.iValue);
 	}
 }

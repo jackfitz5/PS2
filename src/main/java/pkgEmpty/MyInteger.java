@@ -38,6 +38,15 @@ package pkgEmpty;
 		else
 			return false;
 	}
+	
+	
+	public static boolean isPrime(int x)
+	{
+		for(int i = 2;i < x;i++) 
+	        if((x % i) == 0)
+	            return false;
+	    return true;
+	}
 	public static boolean isEven(int x) 
 	{
 		if ((x % 2) == 0)
@@ -54,27 +63,21 @@ package pkgEmpty;
 			return false;
 	}
 	
-	public static boolean isPrime(int x)
+	public static boolean isPrime(MyInteger number)
 	{
-		for(int i = 2;i < x;i++) 
-	        if((x % i) == 0)
-	            return false;
-	    return true;
+		return number.isPrime();
 	}
+	
 	
 	public static boolean isEven(MyInteger number) 
 	{
 		return number.isEven();
 	}
 	
+	
 	public static boolean isOdd(MyInteger number) 
 	{
 		return number.isOdd();
-	}
-	
-	public static boolean isPrime(MyInteger number)
-	{
-		return number.isPrime();
 	}
 	
 	public boolean equals(int x)

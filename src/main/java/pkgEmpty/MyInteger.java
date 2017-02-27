@@ -9,6 +9,7 @@ package pkgEmpty;
 		this.iValue = iValue;
 	}
 	
+	
 	public boolean isPrime()
 	{
 		for(int i = 2;i < iValue;i++) 
@@ -47,6 +48,8 @@ package pkgEmpty;
 	            return false;
 	    return true;
 	}
+	
+	
 	public static boolean isEven(int x) 
 	{
 		if ((x % 2) == 0)

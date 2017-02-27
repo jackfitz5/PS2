@@ -53,28 +53,28 @@ public class PS2_Tests {
 	@Test
 	public void testisEven() {
 		
-		assertEquals(true, MyInteger.isEven(integerB));
-		assertEquals(false, MyInteger.isEven(integerA));
+		assertEquals(true, MyInteger.isEven(integerA));
+		assertEquals(false, MyInteger.isEven(integerB));
 		
-		assertEquals(false, MyInteger.isEven(test1));
-		assertEquals(true, MyInteger.isEven(test2));
+		assertEquals(true, MyInteger.isEven(test1));
+		assertEquals(false, MyInteger.isEven(test2));
 	}
 
 	@Test
 	public void testisOdd() {
 		
-		assertEquals(true, MyInteger.isOdd(integerC));
-		assertEquals(false, MyInteger.isOdd(integerD));
+		assertEquals(true, MyInteger.isOdd(integerB));
+		assertEquals(false, MyInteger.isOdd(integerC));
 		
-		assertEquals(false, MyInteger.isOdd(test4));
-		assertEquals(true, MyInteger.isOdd(test3));
+		assertEquals(true, MyInteger.isOdd(test4));
+		assertEquals(false, MyInteger.isOdd(test3));
 	}
 
 	@Test
 	public void testisPrime() {
 		
 		assertEquals(true, MyInteger.isPrime(integerD));
-		assertEquals(false, MyInteger.isPrime(integerA));
+		assertEquals(true, MyInteger.isPrime(integerA));
 		
 		assertEquals(true, MyInteger.isPrime(test2));
 		assertEquals(false, MyInteger.isPrime(test3));
